@@ -121,6 +121,10 @@ export default function ProductCatalog() {
           </div>
         ))}
       </div>
+      {/* Messaggio finale */}
+      <div className="mt-12 text-center text-base text-gray-700 font-medium">
+        Per procedere all'acquisto, è semplice! Manda una e-mail a <a href="mailto:info@colonnaarredamenti.com" className="text-blue-700 underline">info@colonnaarredamenti.com</a> o chiama al <a href="tel:0835336571" className="text-blue-700 underline">0835 336571</a>
+      </div>
     </section>
   );
 }
