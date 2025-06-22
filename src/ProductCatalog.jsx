@@ -98,8 +98,8 @@ export default function ProductCatalog() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {filtered.map(p => (
-          <div key={p.name} className="bg-white rounded-xl shadow hover:scale-105 transition">
-            <img src={p.image} alt={p.name} className="w-1/3 h-56 object-cover rounded-t-xl" />
+          <div key={p.name} className="bg-white rounded-xl shadow transition">
+            <img src={p.image} alt={p.name} className="mx-auto w-40 h-40 object-cover rounded-t-xl" />
             <div className="p-4">
               <h3 className="text-xl font-semibold">{p.name}</h3>
               <p className="text-sm text-gray-500">{p.brand} &middot; {p.type}</p>
