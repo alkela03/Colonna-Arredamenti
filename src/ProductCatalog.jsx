@@ -96,11 +96,18 @@ export default function ProductCatalog() {
         )}
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="flex flex-col gap-6">
         {filtered.map(p => (
-          <div key={p.name} className="bg-white rounded-xl shadow transition">
-            <img src={p.image} alt={p.name} className="mx-auto w-40 h-40 object-cover rounded-t-xl" />
-            <div className="p-4">
+          <div
+            key={p.name}
+            className="flex flex-col md:flex-row items-center md:items-start bg-white rounded-xl shadow p-4"
+          >
+            <img
+              src={p.image}
+              alt={p.name}
+              className="w-32 h-32 object-cover rounded-xl mb-4 md:mb-0 md:mr-8"
+            />
+            <div className="flex-1 text-center md:text-left">
               <h3 className="text-xl font-semibold">{p.name}</h3>
               <p className="text-sm text-gray-500">{p.brand} &middot; {p.type}</p>
               <p className="text-lg font-bold mt-2">{p.price} €</p>
